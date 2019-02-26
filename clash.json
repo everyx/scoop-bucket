@@ -15,6 +15,6 @@
     },
     "bin": "clash.exe",
     "pre_install": [
-        "Get-ChildItem '$dir/clash-windows-*.exe' | Rename-Item -NewName '$dir/clash.exe'"
+        "Get-ChildItem \"$dir\\clash-windows-*.exe\" | Rename-Item -NewName \"$dir\\clash.exe\""
     ]
 }
