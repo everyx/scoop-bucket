@@ -16,6 +16,6 @@
     "bin": "clash.exe",
     "pre_install": [
         "$bin_name = $architecture.Substring(0,2)",
-        "rename-Item '$dir\\current\\clash-windows-amd$bin_name.exe' -NewName 'clash.exe'"
+        "rename-Item '$dir\\current\\clash-windows-amd' + $bin_name + '.exe' -NewName 'clash.exe'"
     ]
 }
