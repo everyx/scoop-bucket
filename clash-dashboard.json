@@ -3,7 +3,8 @@
     "description": "web port of clash",
     "version": "0.2.0",
     "url": "https://github.com/Dreamacro/clash-dashboard/archive/gh-pages.zip",
-    "notes": "NOTE: please set clash `external-ui` to $dir",
+    "extract_dir": "clash-dashboard-gh-pages",
+    "notes": "Please set clash `external-ui` to $dir",
     "checkver": {
         "github": "https://github.com/Dreamacro/clash-dashboard"
     },
