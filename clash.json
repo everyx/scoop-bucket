@@ -2,6 +2,10 @@
     "homepage": "https://github.com/Dreamacro/",
     "description": "A rule-based tunnel in Go",
     "version": "0.12.0",
+    "bin": "clash.exe",
+    "pre_install": [
+        "Get-ChildItem \"$dir\\clash-windows-*.exe\" | Rename-Item -NewName \"$dir\\clash.exe\""
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/Dreamacro/clash/releases/download/v0.12.0/clash-windows-amd64.zip"
@@ -13,8 +17,12 @@
     "checkver": {
         "github": "https://github.com/Dreamacro/clash"
     },
-    "bin": "clash.exe",
-    "pre_install": [
-        "Get-ChildItem \"$dir\\clash-windows-*.exe\" | Rename-Item -NewName \"$dir\\clash.exe\""
-    ]
+    "autoupdate": {
+        "64bit": {
+            "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-amd64.zip"
+        },
+        "32bit": {
+            "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-386.zip"
+        }
+    }
 }
