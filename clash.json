@@ -1,5 +1,5 @@
 {
-    "homepage": "https://github.com/Dreamacro/",
+    "homepage": "https://github.com/Dreamacro/clash",
     "description": "A rule-based tunnel in Go",
     "version": "0.12.0",
     "bin": "clash.exe",
