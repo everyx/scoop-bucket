@@ -1,5 +1,5 @@
 # scoop-bucket
-my bucket for scoop
+my bucket for [scoop](https://github.com/lukesampson/scoop)
 
 ## List of package
 - [x] [Clash](https://github.com/Dreamacro/clash) - A rule-based tunnel in Go
