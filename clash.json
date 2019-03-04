@@ -14,6 +14,12 @@
             "url": "https://github.com/Dreamacro/clash/releases/download/v0.12.0/clash-windows-386.zip"
         }
     },
+    "suggest": {
+        "Dashboard": [
+            "clash-dashboard",
+            "yacd"
+        ]
+    },
     "checkver": {
         "github": "https://github.com/Dreamacro/clash"
     },
