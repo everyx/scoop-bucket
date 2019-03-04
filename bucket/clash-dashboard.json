@@ -1,0 +1,14 @@
+{
+    "homepage": "https://github.com/Dreamacro/clash-dashboard",
+    "description": "web port of clash",
+    "version": "0.2.0",
+    "url": "https://github.com/Dreamacro/clash-dashboard/archive/gh-pages.zip",
+    "extract_dir": "clash-dashboard-gh-pages",
+    "notes": "Please set clash `external-ui` to $dir",
+    "checkver": {
+        "github": "https://github.com/Dreamacro/clash-dashboard"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Dreamacro/clash-dashboard/archive/gh-pages.zip"
+    }
+}
