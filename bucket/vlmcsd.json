@@ -21,8 +21,14 @@
         }
     },
     "bin": [
-        ["vlmcsd-Windows.exe", "vlmcsd"],
-        ["vlmcs-Windows.exe", "vlmcs"]
+        [
+            "vlmcsd-Windows.exe",
+            "vlmcsd"
+        ],
+        [
+            "vlmcs-Windows.exe",
+            "vlmcs"
+        ]
     ],
     "checkver": {
         "url": "https://github.com/Wind4/vlmcsd/releases/latest",
