@@ -4,7 +4,7 @@
     "homepage": "https://www.xmind.cn/zen/",
     "architecture": {
         "64bit": {
-            "url": "https://dl3.xmind.net/XMind-ZEN-Update-2019-for-Windows-64bit-9.1.3.201812101752.exe",
+            "url": "https://dl3.xmind.net/XMind-ZEN-Update-2019-for-Windows-64bit-9.1.3.201812101752.exe"
         }
     },
     "innosetup": true,
