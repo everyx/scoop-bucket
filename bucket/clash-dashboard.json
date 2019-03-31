@@ -8,7 +8,7 @@
         "Move-Item -Path \"$dir\\clash-dashboard-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\clash-dashboard-$version\""
     ],
-    "notes": "Please set clash `external-ui` to $dir",
+    "notes": "Please set clash `external-ui` to $(appdir $app)\\current\\",
     "checkver": {
         "url": "https://github.com/Dreamacro/clash-dashboard/tree/gh-pages",
         "re": "/Dreamacro/clash-dashboard/commit/([a-z0-9]+)"
