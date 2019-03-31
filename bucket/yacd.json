@@ -1,8 +1,9 @@
 {
     "homepage": "https://github.com/haishanh/yacd",
     "description": "Yet Another Clash Dashboard",
-    "version": "5b51781ee7cb970a7f053be9658972e582309f79",
-    "url": "https://codeload.github.com/haishanh/yacd/zip/gh-pages",
+    "version": "b401a7b78f24079855b4f75dbc40cc08e2759e6e",
+    "url": "https://github.com/haishanh/yacd/archive/b401a7b78f24079855b4f75dbc40cc08e2759e6e.zip",
+    "hash": "f7c72ba76c506e8f300a274d3e1ad1fe1634e68d5ab622281edd75136ee548a6",
     "extract_dir": "yacd-gh-pages",
     "notes": "Please set clash `external-ui` to $dir",
     "checkver": {
@@ -10,6 +11,6 @@
         "re": "/haishanh/yacd/commit/([a-z0-9]+)"
     },
     "autoupdate": {
-        "url": "https://codeload.github.com/haishanh/yacd/zip/gh-pages"
+        "url": "https://github.com/haishanh/yacd/archive/$version.zip"
     }
 }
