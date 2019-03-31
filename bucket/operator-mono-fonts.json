@@ -5,7 +5,7 @@
     "url": "https://github.com/coderJianXun/Operator-Mono/archive/1370287d8e31ef55cd94c157fa9dbed189f28bae.zip",
     "hash": "",
     "pre_install": [
-        "Move-Item -Path \"$dir\\Operator-Mono-$version\\*\" -Destination \"$dir\\\"",
+        "Move-Item -Path \"$dir\\Operator-Mono-$version\\src\\Operator Mono\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\Operator-Mono-$version\""
     ],
     "notes": "Please install fonts in $dir manually",
