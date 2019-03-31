@@ -4,7 +4,7 @@
     "version": "608ae0d0480a9cb8a1d387c9aae41e45248c3b03",
     "url": "https://github.com/Dreamacro/clash-dashboard/archive/608ae0d0480a9cb8a1d387c9aae41e45248c3b03.zip",
     "hash": "43538ea674368a73cb01c5327606b30ec106f32c8e2fbde5b56a523c4b4ca183",
-    "extract_dir": "clash-dashboard-gh-pages",
+    "extract_dir": "clash-dashboard-$version",
     "notes": "Please set clash `external-ui` to $dir",
     "checkver": {
         "url": "https://github.com/Dreamacro/clash-dashboard/tree/gh-pages",
