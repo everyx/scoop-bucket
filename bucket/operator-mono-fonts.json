@@ -6,7 +6,7 @@
     "hash": "",
     "pre_install": [
         "Move-Item -Path \"$dir\\Operator-Mono-$version\\src\\Operator Mono\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\Operator-Mono-$version\""
+        "Remove-Item \"$dir\\Operator-Mono-$version\" -Recurse"
     ],
     "notes": "Please install fonts in $dir manually",
     "checkver": {
