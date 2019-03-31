@@ -4,7 +4,10 @@
     "version": "b401a7b78f24079855b4f75dbc40cc08e2759e6e",
     "url": "https://github.com/haishanh/yacd/archive/b401a7b78f24079855b4f75dbc40cc08e2759e6e.zip",
     "hash": "f7c72ba76c506e8f300a274d3e1ad1fe1634e68d5ab622281edd75136ee548a6",
-    "extract_dir": "yacd-gh-pages",
+    "pre_install": [
+        "Move-Item -Path \"$dir\\yacd-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\yacd-$version\""
+    ],
     "notes": "Please set clash `external-ui` to $dir",
     "checkver": {
         "url": "https://github.com/haishanh/yacd/commits/master",
