@@ -25,19 +25,9 @@
     ],
     "checkver": {
         "url": "https://github.com/rizonesoft/Notepad3/releases/latest",
-        "re": "RELEASE_([\\d.]+)"
+        "re": "Notepad3 Release ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_$version/Notepad3_$version.zip",
-        "64bit": {
-            "installer": {
-                "script": "extract_7zip \"$dir\\Notepad3_$version_x64.zip\" \"$dir\""
-            }
-        },
-        "32bit": {
-            "installer": {
-                "script": "extract_7zip \"$dir\\Notepad3_$version_x86.zip\" \"$dir\""
-            }
-        }
+        "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_$version/Notepad3_$version.zip"
     }
 }

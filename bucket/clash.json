@@ -1,32 +1,37 @@
 {
     "homepage": "https://github.com/Dreamacro/clash",
     "description": "A rule-based tunnel in Go",
-    "version": "0.12.0",
-    "bin": "clash.exe",
+    "version": "0.13.0",
     "pre_install": "Get-ChildItem \"$dir\\clash-windows-*.exe\" | Rename-Item -NewName \"$dir\\clash.exe\"",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/v0.12.0/clash-windows-amd64.zip"
+            "url": "https://github.com/Dreamacro/clash/releases/download/v0.13.0/clash-windows-amd64.zip",
+            "hash": "238489a1246f671882ab96c091a8df0b89a74737797034a89567efbaad72cc8d"
         },
         "32bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/v0.12.0/clash-windows-386.zip"
+            "url": "https://github.com/Dreamacro/clash/releases/download/v0.13.0/clash-windows-386.zip",
+            "hash": "9de89e6674d81b91367a5dcca20f0d1218baa8aec5dce8b77aa800c415a04a8b"
         }
     },
+    "bin": "clash.exe",
     "suggest": {
         "Dashboard": [
             "clash-dashboard",
             "yacd"
-        ]
+        ],
+        "Daemon": "nssm"
     },
     "checkver": {
         "github": "https://github.com/Dreamacro/clash"
     },
     "autoupdate": {
-        "64bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-amd64.zip"
-        },
-        "32bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-386.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-amd64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-386.zip"
+            }
         }
     }
 }
