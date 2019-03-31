@@ -1,0 +1,14 @@
+{
+    "homepage": "https://github.com/adobe-fonts/source-han-serif",
+    "description": "Source Han Serif Subset OTF - Traditional Chinese (Taiwan) OpenType/CFF fonts",
+    "version": "2.000",
+    "url": "https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifTW.zip",
+    "extract_dir": "SourceHanSerifTW",
+    "notes": "Please install fonts in $dir manually",
+    "checkver": {
+        "github": "https://github.com/adobe-fonts/source-han-serif"
+    },
+    "autoupdate": {
+        "url": "https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifTW.zip"
+    }
+}
