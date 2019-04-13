@@ -1,9 +1,10 @@
 {
     "homepage": "https://github.com/adobe-fonts/source-han-sans",
     "description": "Adobe Source Han Sans Subset OTF - Japanese OpenType/CFF fonts",
-    "version": "2.000",
+    "version": "2.001",
     "url": "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/SourceHanSansJP.zip",
     "extract_dir": "SourceHanSansJP",
+    "hash": "285f669d01f0b790b40f00ac85296b299a95542386c0cb6c9fc830e52bad8757",
     "notes": "Please install fonts in $dir manually",
     "checkver": {
         "github": "https://github.com/adobe-fonts/source-han-sans"
