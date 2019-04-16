@@ -10,7 +10,7 @@
     ],
     "notes": "Please set clash `external-ui` to $dir",
     "checkver": {
-        "url": "https://github.com/Dreamacro/clash-dashboard/tree/gh-pages",
+        "url": "https://github.com/Dreamacro/clash-dashboard/commits/gh-pages",
         "re": "/Dreamacro/clash-dashboard/commit/([a-z0-9]+)"
     },
     "autoupdate": {
