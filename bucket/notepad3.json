@@ -6,7 +6,7 @@
     "url": [
         "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.19.108.1602/Notepad3_5.19.108.1602.zip",
         "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-install-replace.reg",
-        "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-uninstall-replace.reg"
+        "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-uninstall.reg"
     ],
     "hash": [
         "df952cbb4f19888732b75dee04c81527ec9a3abdf9e079f12efff1b223afec74",
