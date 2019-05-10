@@ -2,6 +2,10 @@
 
 my bucket for [scoop](https://github.com/lukesampson/scoop)
 
+```powershell
+scoop bucket add everyx https://github.com/everyx/scoop-bucket
+```
+
 ## List of package
 
 ### Apps
