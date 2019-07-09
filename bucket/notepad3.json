@@ -1,15 +1,15 @@
 {
     "homepage": "https://github.com/rizonesoft/Notepad3",
     "description": "Notepad like text editor based on the Scintilla source code. Notepad3 based on code from Notepad2 and MiniPath on code from metapath.",
-    "version": "5.19.108.1602",
+    "version": "5.19.630.2381",
     "bin": "Notepad3.exe",
     "url": [
-        "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.19.108.1602/Notepad3_5.19.108.1602.zip",
+        "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.19.630.2381/Notepad3_5.19.630.2381.zip",
         "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-install-replace.reg",
         "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-uninstall.reg"
     ],
     "hash": [
-        "df952cbb4f19888732b75dee04c81527ec9a3abdf9e079f12efff1b223afec74",
+        "4c2ddca0f2e27b5980ad33f9f21b3fb9693631d6643568fff2e2e964092c1d4c",
         "306bf331581183459a4fe241c1b046ee393866155c4a69f0d4a9dcf4903af634",
         "6a3ba3f05705b0d326892d2553a4658826e7e3cc1d96b5b1c39346c2de962ef6"
     ],
