@@ -21,7 +21,9 @@ Invoke-WebRequest `
 docker-compose -f "$psscriptroot/docker-compose.yml" up --build
 
 del "$rootdir/fonts/Cascadia.ttf"
-mv "$rootdir/fonts/Cascadia Code Nerd Font Windows Compatible.ttf" "$rootdir/fonts/Cascadia-NF.ttf"
+Move-Item -Force `
+    -Path "$rootdir/fonts/Cascadia Code Nerd Font Windows Compatible.ttf" `
+    -Destination "$rootdir/fonts/Cascadia-NF.ttf"
 
 docker-compose -f "$psscriptroot/docker-compose.yml" down
 
