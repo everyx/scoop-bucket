@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/Dreamacro/clash-dashboard",
     "description": "web port of clash",
-    "version": "1aaefeed5a860cd9450d4ad565ba5e4c6535f201",
-    "url": "https://github.com/Dreamacro/clash-dashboard/archive/1aaefeed5a860cd9450d4ad565ba5e4c6535f201.zip",
-    "hash": "26f7372d66f8a4e06c2a8e9adc4bc6add019f5dd4bd0b912f8fc025a70ebecfd",
+    "version": "5c32f455f83a4ff879e8e9270ecc324212a47601",
+    "url": "https://github.com/Dreamacro/clash-dashboard/archive/5c32f455f83a4ff879e8e9270ecc324212a47601.zip",
+    "hash": "625c09ff45722e3e4c70b17a0b2f7d85afa046b62ee2acc3816f8a66c92b7965",
     "pre_install": [
         "Move-Item -Path \"$dir\\clash-dashboard-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\clash-dashboard-$version\""
