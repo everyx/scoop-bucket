@@ -3,7 +3,7 @@
     "license": "OFL-1.1",
     "homepage": "https://github.com/microsoft/cascadia-code",
     "url": "https://raw.githubusercontent.com/everyx/scoop-bucket/master/fonts/Cascadia-NF.ttf",
-    "hash": "0be0829307d7ddf531e542fb72d82d88e1205bec026e2aedeb275ef169f66a9c",
+    "hash": "7c67bbea83a614ba6c00f5fae84b753d18411f26fb5871f5cc106a87ed49456a",
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {

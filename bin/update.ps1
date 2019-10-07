@@ -35,8 +35,8 @@ $formatjson = "$env:SCOOP_HOME/bin/formatjson.ps1"
 $checkhashes = "$env:SCOOP_HOME/bin/checkhashes.ps1"
 $manifest = "CascadiaCode-NF"
 
-Invoke-Expression -Command "$formatjson -Dir $bucketDir"
 Invoke-Expression -Command "$checkhashes -Dir $bucketDir $manifest -Update"
+Invoke-Expression -Command "$formatjson -Dir $bucketDir"
 
 # push
 git add .
