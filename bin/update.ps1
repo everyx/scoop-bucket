@@ -1,14 +1,12 @@
+$ErrorActionPreference = "Stop"
+$bucketDir = "$psscriptroot/../bucket"
+if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
+
 git pull
 
 # check update
-if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
 $checkver = "$env:SCOOP_HOME/bin/checkver.ps1"
-$formatjson = "$env:SCOOP_HOME/bin/formatjson.ps1"
-
-$bucket = "$psscriptroot/../bucket" # checks the parent dir
-
-Invoke-Expression -Command "$checkver -dir $bucket * -u"
-Invoke-Expression -Command "$formatjson -dir $bucket"
+Invoke-Expression -Command "$checkver -Dir $bucketDir -Update"
 
 # generate fonts
 $rootdir = "$psscriptroot/.."
@@ -26,6 +24,19 @@ Move-Item -Force `
     -Destination "$rootdir/fonts/Cascadia-NF.ttf"
 
 docker-compose -f "$psscriptroot/docker-compose.yml" down
+
+# push fonts
+git add fonts
+git commit -m "update fonts."
+git push
+
+# update hash and format json
+$formatjson = "$env:SCOOP_HOME/bin/formatjson.ps1"
+$checkhashes = "$env:SCOOP_HOME/bin/checkhashes.ps1"
+$manifest = "CascadiaCode-NF"
+
+Invoke-Expression -Command "$formatjson -Dir $bucketDir"
+Invoke-Expression -Command "$checkhashes -Dir $bucketDir $manifest -Update"
 
 # push
 git add .
