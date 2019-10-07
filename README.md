@@ -20,6 +20,7 @@ scoop bucket add everyx https://github.com/everyx/scoop-bucket
 
 ### Fonts
 
+- [x] [CascadiaCode-NF](https://github.com/microsoft/cascadia-code) - Microsoft Cascadia Code with Nerd Fonts patch.
 - [x] [operator-mono-fonts](https://github.com/coderJianXun/Operator-Mono) - Coding Font Operator Mono.
 - [x] [adobe-source-han-sans-cn-fonts](https://github.com/adobe-fonts/source-han-sans) - Adobe Source Han Sans Subset OTF - Simplified Chinese OpenType/CFF fonts.
 - [x] [adobe-source-han-sans-hk-fonts](https://github.com/adobe-fonts/source-han-sans) - Adobe Source Han Sans Subset OTF - Traditional Chinese (Hong Kong) OpenType/CFF fonts.
