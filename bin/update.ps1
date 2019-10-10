@@ -1,4 +1,5 @@
 $ErrorActionPreference = "Stop"
+
 $bucketDir = "$psscriptroot/../bucket"
 if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
 
@@ -8,34 +9,34 @@ git pull
 $checkver = "$env:SCOOP_HOME/bin/checkver.ps1"
 Invoke-Expression -Command "$checkver -Dir $bucketDir -Update"
 
-# generate fonts
-$rootdir = "$psscriptroot/.."
-
-$version = (Get-Content -Raw -Path "$rootdir/bucket/CascadiaCode-NF.json" | ConvertFrom-Json).version
+# CascadiaCode-NF font
+$manifest = "CascadiaCode-NF"
+$fontsDir = "$psscriptroot/../fonts"
+$version = (Get-Content -Raw -Path "$bucketDir/$manifest.json" | ConvertFrom-Json).version
 Invoke-WebRequest `
     -Uri "https://github.com/microsoft/cascadia-code/releases/download/v$version/Cascadia.ttf" `
-    -OutFile "$rootdir/fonts/Cascadia.ttf"
+    -OutFile "$fontsDir/Cascadia.ttf"
 
-docker-compose -f "$psscriptroot/docker-compose.yml" up --build
+$fontFile = "$fontsDir/Cascadia-NF_$version.ttf"
 
-del "$rootdir/fonts/Cascadia.ttf"
-Move-Item -Force `
-    -Path "$rootdir/fonts/Cascadia Code Nerd Font Windows Compatible.ttf" `
-    -Destination "$rootdir/fonts/Cascadia-NF.ttf"
+if (![System.IO.File]::Exists($fontFile)) {
+    docker-compose -f "$psscriptroot/docker-compose.yml" up --build
+    Move-Item -Force `
+        -Path "$fontsDir/Cascadia Code Nerd Font Windows Compatible.ttf" `
+        -Destination "$fontFile"
+    docker-compose -f "$psscriptroot/docker-compose.yml" down
 
-docker-compose -f "$psscriptroot/docker-compose.yml" down
+    # push fonts
+    git add "$fontsDir"
+    git commit -m "update CascadiaCode-NF to v$version."
+    git push
 
-# push fonts
-git add fonts
-git commit -m "update fonts."
-git push
+    $checkhashes = "$env:SCOOP_HOME/bin/checkhashes.ps1"
+    Invoke-Expression -Command "$checkhashes -Dir $bucketDir $manifest -Update"
+}
 
-# update hash and format json
+# format json
 $formatjson = "$env:SCOOP_HOME/bin/formatjson.ps1"
-$checkhashes = "$env:SCOOP_HOME/bin/checkhashes.ps1"
-$manifest = "CascadiaCode-NF"
-
-Invoke-Expression -Command "$checkhashes -Dir $bucketDir $manifest -Update"
 Invoke-Expression -Command "$formatjson -Dir $bucketDir"
 
 # push
