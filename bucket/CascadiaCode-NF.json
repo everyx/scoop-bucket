@@ -2,12 +2,12 @@
     "version": "1910.04",
     "license": "OFL-1.1",
     "homepage": "https://github.com/microsoft/cascadia-code",
-    "url": "https://raw.githubusercontent.com/everyx/scoop-bucket/master/fonts/Cascadia-NF.ttf",
-    "hash": "871f0627aeb212d3d878bf4da7f89ddf9730f04d54f1e40e03e7043aa23702f7",
+    "url": "https://raw.githubusercontent.com/everyx/scoop-bucket/master/fonts/Cascadia-NF_1910.04.ttf",
+    "hash": "82fe32228d77d6928ca490b244ec5781708e03aa6a70c642163c867e33a62e72",
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {
-        "url": "https://raw.githubusercontent.com/everyx/scoop-bucket/master/fonts/Cascadia-NF.ttf"
+        "url": "https://raw.githubusercontent.com/everyx/scoop-bucket/master/fonts/Cascadia-NF_$version.ttf"
     },
     "installer": {
         "script": [
