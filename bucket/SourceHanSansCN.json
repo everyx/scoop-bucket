@@ -7,20 +7,25 @@
     "extract_dir": "SourceHanSansCN",
     "hash": "dbc63746cd8daa8b219a236fe0278e5eb7f910bec90c9897ada440e6d796f256",
     "checkver": "github",
+    "depends": "sudo",
     "autoupdate": {
         "url": "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/SourceHanSansCN.zip"
     },
     "installer": {
         "script": [
-            "$addFont = '$bucketsdir/everyx/bin/Add-Font.ps1'",
-            "Invoke-Expression -Command '$addFont -path $dir'"
+            "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
+            "$addFont = \"$bucketsdir\\everyx\\bin\\Add-Font.ps1\"",
+            "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' -Recurse | ForEach {",
+            "   Invoke-Expression -Command \"$addFont -path $($_.FullName)\"",
+            "}"
         ]
     },
     "uninstaller": {
         "script": [
-            "$removeFont = '$bucketsdir/everyx/bin/Remove-Font.ps1'",
-            "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' | ForEach {",
-            "   Invoke-Expression -Command '$removeFont -file $($_.Name)'",
+            "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
+            "$removeFont = \"$bucketsdir\\everyx\\bin\\Remove-Font.ps1\"",
+            "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' -Recurse | ForEach {",
+            "   Invoke-Expression -Command \"$removeFont -file $($_.Name)\"",
             "}"
         ]
     }
