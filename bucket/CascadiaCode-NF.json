@@ -12,20 +12,19 @@
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
-            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
-            "    New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
-            "    Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "$addFont = \"$bucketsdir\\everyx\\bin\\Add-Font.ps1\"",
+            "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' -Recurse | ForEach {",
+            "   Invoke-Expression -Command \"$addFont -path $($_.FullName)\"",
             "}"
         ]
     },
     "uninstaller": {
         "script": [
-            "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop uninstall $app'\"; exit 1 }",
-            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
-            "    Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
-            "    Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
-            "}",
-            "Write-Host \"The '$app' font family has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+            "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
+            "$removeFont = \"$bucketsdir\\everyx\\bin\\Remove-Font.ps1\"",
+            "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' -Recurse | ForEach {",
+            "   Invoke-Expression -Command \"$removeFont -file $($_.Name)\"",
+            "}"
         ]
     }
 }

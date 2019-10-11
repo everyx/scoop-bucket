@@ -1,15 +1,19 @@
 {
-    "version": "2.001",
-    "license": "OFL-1.1",
-    "homepage": "https://github.com/adobe-fonts/source-han-sans",
-    "description": "Adobe Source Han Sans Subset OTF - Japanese OpenType/CFF fonts",
-    "url": "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/SourceHanSansJP.zip",
-    "extract_dir": "SourceHanSansJP",
-    "hash": "285f669d01f0b790b40f00ac85296b299a95542386c0cb6c9fc830e52bad8757",
-    "checkver": "github",
-    "depends": "sudo",
+    "homepage": "https://github.com/coderJianXun/Operator-Mono",
+    "description": "Coding Font Operator Mono",
+    "version": "1370287d8e31ef55cd94c157fa9dbed189f28bae",
+    "url": "https://github.com/coderJianXun/Operator-Mono/archive/1370287d8e31ef55cd94c157fa9dbed189f28bae.zip",
+    "hash": "",
+    "pre_install": [
+        "Move-Item -Path \"$dir\\Operator-Mono-$version\\src\\Operator Mono\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\Operator-Mono-$version\" -Recurse"
+    ],
+    "checkver": {
+        "url": "https://github.com/coderJianXun/Operator-Mono",
+        "re": "/coderJianXun/Operator-Mono/commit/([a-z0-9]+)"
+    },
     "autoupdate": {
-        "url": "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/SourceHanSansJP.zip"
+        "url": "https://github.com/coderJianXun/Operator-Mono/archive/$version.zip"
     },
     "installer": {
         "script": [
