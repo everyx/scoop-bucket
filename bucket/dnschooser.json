@@ -5,7 +5,9 @@
     "url": "https://gitee.com/gazeboxu/dnschooser-pub/raw/master/release/dnschooser-latest.zip",
     "extract_dir": "dnschooser",
     "hash": "22e4d574f82715ef853355ceb13a797fdf833a20b763a7b6736fda98ae33613f",
-    "shortcuts": ["dnschooser-winclient.exe", "DNSCHooser客户端"],
+    "shortcuts": [ 
+        ["dnschooser-winclient.exe", "DNSCHooser 客户端" ]
+    ],
     "checkver": {
         "url": "https://gitee.com/gazeboxu/dnschooser-pub/raw/master/release/autoupdate.xml",
         "xpath": "/item/version"
@@ -17,12 +19,14 @@
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
+            "cd $dir",
             "sudo $dir\\install.bat"
         ]
     },
     "uninstaller": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
+            "cd $dir",
             "sudo $dir\\uninstall.bat"
         ]
     }
