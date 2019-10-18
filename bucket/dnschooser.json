@@ -11,5 +11,18 @@
     },
     "autoupdate": {
         "url": "https://gitee.com/gazeboxu/dnschooser-pub/raw/master/release/dnschooser-latest.zip"
+    },
+    "depends": "sudo",
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
+            "sudo $dir\\install.bat"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
+            "sudo $dir\\uninstall.bat"
+        ]
     }
 }
