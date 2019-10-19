@@ -19,15 +19,13 @@
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
-            "cd $dir",
-            "sudo $dir\\install.bat"
+            "pushd $dir; sudo $dir\\install.bat; popd"
         ]
     },
     "uninstaller": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
-            "cd $dir",
-            "sudo $dir\\uninstall.bat"
+            "pushd $dir; sudo $dir\\uninstall.bat; popd"
         ]
     }
 }
