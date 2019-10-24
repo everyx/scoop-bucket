@@ -2,13 +2,15 @@
     "homepage": "https://github.com/ginuerzh/gost",
     "description": "GO Simple Tunnel - a simple tunnel written in golang",
     "version": "2.8.1",
-    "bin": [ 
-        ["gost.exe", "gost", "-C $persist_dir/config.json"]
+    "bin": [
+        [
+            "gost.exe",
+            "gost",
+            "-C $persist_dir/config.json"
+        ]
     ],
     "persist": "config.json",
-    "pre_install": [
-        "New-Item -Path $dir -Name \"config.json\" -ItemType \"file\" -Value \"# 配置文件参考：https://docs.ginuerzh.xyz/gost/getting-started/\""
-    ],
+    "pre_install": "New-Item -Path $dir -Name \"config.json\" -ItemType \"file\" -Value \"# 配置文件参考：https://docs.ginuerzh.xyz/gost/getting-started/\"",
     "architecture": {
         "64bit": {
             "url": "https://github.com/ginuerzh/gost/releases/download/v2.8.1/gost_2.8.1_windows_amd64.zip",
