@@ -1,0 +1,14 @@
+{
+    "homepage": "https://github.com/robertdavidgraham/masscan",
+    "description": "TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes.",
+    "version": "30b6b3e",
+    "bin": [
+        [
+            "masscan.exe",
+            "masscan"
+        ]
+    ],
+    "url": "https://github.com/PentestBox/masscan/archive/master.zip",
+    "hash": "44152f04e8826c8ffd9f88f108752c1a31974620b2a2309bda02f63d3f9c1f45",
+    "extract_dir": "masscan-master"
+}
