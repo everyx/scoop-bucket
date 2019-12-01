@@ -1,9 +1,0 @@
-version: '3.7'
-
-services:
-  CascadiaCode-NF:
-    image: pocka/nerd-font-patcher
-    restart: "no"
-    command: "-w --powerline -out /fonts/ /fonts/Cascadia.ttf"
-    volumes:
-      - ../fonts:/fonts
