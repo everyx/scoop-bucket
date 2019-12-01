@@ -21,7 +21,7 @@
 #########################################################################################
 
 #******************************************************************************
-# File:     Remove-Font.ps1
+# File:     remove-font.ps1
 # Date:     08/28/2013
 # Version:  1.0.1
 #
@@ -528,11 +528,11 @@ function Remove-SingleFont($file)
 function Show-Usage()
 {
 $usage = @'
-Remove-Font.ps1
+remove-font.ps1
 This script is used to uninstall a Windows font.
 
 Usage:
-Remove-Font.ps1 -help | -path "<Font file name>"
+remove-font.ps1 -help | -path "<Font file name>"
 
 Parameters:
 
@@ -544,8 +544,8 @@ Parameters:
      types are .fon, .fnt, .ttf,.ttc, .otf, .mmm, .pbf, and .pfm
 
 Examples:
-    Remove-Font.ps1
-    Remove-Font.ps1 -file "MyFont.ttf"
+    remove-font.ps1
+    remove-font.ps1 -file "MyFont.ttf"
 '@
 
 $usage

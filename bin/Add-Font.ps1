@@ -21,7 +21,7 @@
 #########################################################################################
 
 #******************************************************************************
-# File:     Add-Font.ps1
+# File:     add-font.ps1
 # Date:     08/28/2013
 # Version:  1.0.1
 #
@@ -493,11 +493,11 @@ function Add-SingleFont($filePath)
 function Show-Usage()
 {
 $usage = @'
-Add-Font.ps1
+add-font.ps1
 This script is used to install Windows fonts.
 
 Usage:
-Add-Font.ps1 -help | -path "<Font file or folder path>"
+add-font.ps1 -help | -path "<Font file or folder path>"
 
 Parameters:
 
@@ -510,9 +510,9 @@ Parameters:
      .ttf,.ttc, .otf, .mmm, .pbf, and .pfm
 
 Examples:
-    Add-Font.ps1
-    Add-Font.ps1 -path "C:\Custom Fonts\MyFont.ttf"
-    Add-Font.ps1 -path "C:\Custom Fonts"
+    add-font.ps1
+    add-font.ps1 -path "C:\Custom Fonts\MyFont.ttf"
+    add-font.ps1 -path "C:\Custom Fonts"
 '@
 
 $usage
