@@ -5,7 +5,7 @@
     "description": "Source Han Serif Subset OTF - Simplified Chinese OpenType/CFF fonts",
     "url": "https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifCN.zip",
     "extract_dir": "SourceHanSerifCN",
-    "hash": "4adce105589c7aea1107dbd1aae05555f60f788ac3976ad0e9bae5e55e386bd5",
+    "hash": "bd75d74f38e0088f3425c8bb448ef03dc170386bcf2693a434141aa844b77a30",
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {
