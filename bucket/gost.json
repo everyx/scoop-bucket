@@ -1,7 +1,7 @@
 {
     "homepage": "https://github.com/ginuerzh/gost",
     "description": "GO Simple Tunnel - a simple tunnel written in golang",
-    "version": "2.8.1",
+    "version": "2.8.2",
     "bin": [
         [
             "gost.exe",
@@ -13,22 +13,22 @@
     "pre_install": "New-Item -Path $dir -Name \"config.json\" -ItemType \"file\" -Value \"# 配置文件参考：https://docs.ginuerzh.xyz/gost/getting-started/\"",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ginuerzh/gost/releases/download/v2.8.1/gost_2.8.1_windows_amd64.zip",
-            "hash": "1b29aab1e502bb07ed8d33ce5cb6d3491991e23103137ed70046fc094b5b6be8"
+            "url": "https://github.com/ginuerzh/gost/releases/download/v2.8.2/gost-windows-amd64-2.8.2.zip",
+            "hash": "6a045bdc8b5bb9f07f44435c5e163076e7315fac4ba8e4920e9c34b3b5c9eaeb"
         },
         "32bit": {
-            "url": "https://github.com/ginuerzh/gost/releases/download/v2.8.1/gost_2.8.1_windows_386.zip",
-            "hash": "aa16cf39c8d6bcac7684552ac57fbe5637862bd8e098d4c3e3b063934a079946"
+            "url": "https://github.com/ginuerzh/gost/releases/download/v2.8.2/gost-windows-386-2.8.2.zip",
+            "hash": "53d50656e94dd1828dded74e6d9c6040605f36b7cdb659de8d8edea7f8cf3a41"
         }
     },
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ginuerzh/gost/releases/download/v$version/gost-$version-windows-amd64.zip"
+                "url": "https://github.com/ginuerzh/gost/releases/download/v$version/gost-windows-amd64-$version.zip"
             },
             "32bit": {
-                "url": "https://github.com/ginuerzh/gost/releases/download/v$version/gost-$version-windows-386.zip"
+                "url": "https://github.com/ginuerzh/gost/releases/download/v$version/gost-windows-386-$version.zip"
             }
         }
     }
