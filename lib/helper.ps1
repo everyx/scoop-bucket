@@ -18,9 +18,9 @@ function updateReadme {
 
 my bucket for [scoop](https://github.com/lukesampson/scoop)
 
-```powershell
+``````powershell
 scoop bucket add everyx https://github.com/everyx/scoop-bucket
-```
+``````
 
 ## List of package
 
