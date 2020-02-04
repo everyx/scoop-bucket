@@ -1,7 +1,7 @@
 {
     "homepage": "https://github.com/ginuerzh/gost",
     "description": "GO Simple Tunnel - a simple tunnel written in golang",
-    "version": "2.9.2",
+    "version": "2.10.0",
     "persist": "config.json",
     "pre_install": "New-Item -Path $dir -Name \"config.json\" -ItemType \"file\" -Value \"# 配置文件参考：https://docs.ginuerzh.xyz/gost/getting-started/\"",
     "architecture": {
@@ -13,8 +13,8 @@
                     "-C $persist_dir/config.json"
                 ]
             ],
-            "url": "https://github.com/ginuerzh/gost/releases/download/v2.9.2/gost-windows-amd64-2.9.2.zip",
-            "hash": "50b068ff2a81026e53a1ab77f2742c29e93035f0aa3190e0003daf16ab6e4092"
+            "url": "https://github.com/ginuerzh/gost/releases/download/v2.10.0/gost-windows-amd64-2.10.0.zip",
+            "hash": "74c5fde0b9c9524af9b4a9761ea7c5d1cb29ba7371d5dba624d07af30a2b7e38"
         },
         "32bit": {
             "bin": [
@@ -24,8 +24,8 @@
                     "-C $persist_dir/config.json"
                 ]
             ],
-            "url": "https://github.com/ginuerzh/gost/releases/download/v2.9.2/gost-windows-386-2.9.2.zip",
-            "hash": "039f4c311312f27db598539c300c56aafeeeabc32d051802cc45d2b2b6b62f70"
+            "url": "https://github.com/ginuerzh/gost/releases/download/v2.10.0/gost-windows-386-2.10.0.zip",
+            "hash": "282939a3763083d46b305c9a657a9fa6039ac8703170605a97a9f4267b328312"
         }
     },
     "checkver": "github",
