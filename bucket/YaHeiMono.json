@@ -1,16 +1,8 @@
 {
-    "version": "1.001",
-    "license": "OFL-1.1",
-    "homepage": "https://github.com/adobe-fonts/source-han-serif",
-    "description": "Source Han Serif Subset OTF - Traditional Chinese (Taiwan) OpenType/CFF fonts",
-    "url": "https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifTW.zip",
-    "extract_dir": "SourceHanSerifTW",
-    "hash": "8475fcac5ee874422494ab62a71e1e5d06af3102e5e05f31345c686c9d210041",
-    "checkver": "github",
+    "version": "5.0.0",
+    "url": "https://github.com/Microsoft/BashOnWindows/files/1362006/Microsoft.YaHei.Mono.zip",
+    "hash": "ebcae3f642aaef908d6f8faf3d03dbe5dda52f6a9b55efad7bc75347de0b2746",
     "depends": "sudo",
-    "autoupdate": {
-        "url": "https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifTW.zip"
-    },
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",

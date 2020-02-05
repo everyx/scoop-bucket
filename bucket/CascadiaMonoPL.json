@@ -14,7 +14,7 @@
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
             "$addFont = \"$bucketsdir\\everyx\\libexec\\add-font.ps1\"",
             "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' -Recurse | ForEach {",
-            "   Invoke-Expression -Command \"$addFont -path $($_.FullName)\"",
+            "   Invoke-Expression -Command \"$addFont -path '$_.FullName'\"",
             "}"
         ]
     },
@@ -23,7 +23,7 @@
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
             "$removeFont = \"$bucketsdir\\everyx\\libexec\\remove-font.ps1\"",
             "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' -Recurse | ForEach {",
-            "   Invoke-Expression -Command \"$removeFont -file $($_.Name)\"",
+            "   Invoke-Expression -Command \"$removeFont -file '$_.Name'\"",
             "}"
         ]
     }
