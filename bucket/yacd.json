@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/haishanh/yacd",
     "description": "Yet Another Clash Dashboard",
-    "version": "d59433f1a4333ca6ad385233cfa52155d1e29309",
-    "url": "https://github.com/haishanh/yacd/archive/d59433f1a4333ca6ad385233cfa52155d1e29309.zip",
-    "hash": "b9890026d7519179a7cc65582b3f2903eb1f054a9bab8cdad1148ae825f363cb",
+    "version": "8debb5714897c3bb716439c6fe4142af36c7fa94",
+    "url": "https://github.com/haishanh/yacd/archive/8debb5714897c3bb716439c6fe4142af36c7fa94.zip",
+    "hash": "98c5bd9660895e2538e0d0a420e65f647beddf9afced80439672e5cb8009c50c",
     "pre_install": [
         "Move-Item -Path \"$dir\\yacd-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\yacd-$version\""
