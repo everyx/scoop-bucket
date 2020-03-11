@@ -3,14 +3,22 @@
     "description": "GO Simple Tunnel - a simple tunnel written in golang",
     "version": "2.11.0",
     "persist": "config.json",
-    "pre_install": "New-Item -Path $dir -Name \"config.json\" -ItemType \"file\" -Value \"# 配置文件参考：https://docs.ginuerzh.xyz/gost/getting-started/\"",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.json\")) {",
+        "    New-Item -Force -Path \"$dir\" -Name \"config.json\" | Out-Null",
+        "}"
+    ],
     "architecture": {
         "64bit": {
             "bin": [
                 [
                     "gost-windows-amd64.exe",
-                    "gost",
-                    "-C $persist_dir/config.json"
+                    "gostc",
+                    "-C $dir/config.json"
+                ],
+                [
+                    "gost-windows-amd64.exe",
+                    "gost"
                 ]
             ],
             "url": "https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-windows-amd64-2.11.0.zip",
@@ -20,8 +28,12 @@
             "bin": [
                 [
                     "gost-windows-386.exe",
-                    "gost",
-                    "-C $persist_dir/config.json"
+                    "gostc",
+                    "-C $dir/config.json"
+                ],
+                [
+                    "gost-windows-386.exe",
+                    "gost"
                 ]
             ],
             "url": "https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-windows-386-2.11.0.zip",
