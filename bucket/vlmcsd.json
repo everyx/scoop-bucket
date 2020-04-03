@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/Wind4/vlmcsd",
     "description": "KMS Emulator in C (currently runs on Linux including Android, FreeBSD, Solaris, Minix, Mac OS, iOS, Windows with or without Cygwin)",
-    "version": "1112",
-    "url": "https://github.com/Wind4/vlmcsd/releases/download/svn1112/binaries.tar.gz",
-    "hash": "a2fc70c4a22786076a09b597cdbfbfa3e02ce7c88c3693f30d1d54047f1bdb24",
+    "version": "1113",
+    "url": "https://github.com/Wind4/vlmcsd/releases/download/svn1113/binaries.tar.gz",
+    "hash": "a084514ca2a016e2cbbb0471ae0d833e1e7487f8c2b8188d5c8efce8cad455ec",
     "extract_dir": "binaries\\Windows\\intel",
     "architecture": {
         "64bit": {
