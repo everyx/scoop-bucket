@@ -1,0 +1,15 @@
+{
+    "homepage": "https://veg.by/en/projects/hostscmd/",
+    "description": "Hosts Commander, a command line hosts editor.",
+    "version": "1.6.1",
+    "bin": "hosts.exe",
+    "url": "https://veg.by/files/winsoft/hostscmd.zip",
+    "hash": "04fc36da181108ed601b1c46b2094ba6b9eaa3f80eaf5641282261676b672ec8",
+    "checkver": {
+        "url": "https://veg.by/en/projects/hostscmd/",
+        "re": "Hosts Commander v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://veg.by/files/winsoft/hostscmd.zip"
+    }
+}
