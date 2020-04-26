@@ -15,8 +15,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://www.xmind.cn/download/",
-        "regex": "XMind-2020-for-Windows-32bit-([\\d-.]+).exe"
+        "url": "https://www.xmind.cn/download/",
+        "re": "XMind-2020-for-Windows-32bit-([\\d-.]+).exe"
     },
     "autoupdate": {
         "url": "https://www.xmind.cn/xmind/downloads/XMind-2020-for-Windows-32bit-$version.exe#/dl.7z"
