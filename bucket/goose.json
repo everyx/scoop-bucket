@@ -11,7 +11,7 @@
                 ]
             ],
             "url": "https://github.com/pressly/goose/releases/download/v2.6.0/goose-windows64.exe",
-            "hash": "fab6245393de83443ae134e689b14548e6ce9c6f7688b8250d9c19ad6d78f478"
+            "hash": "6c39326ec40a1e70b05a171ae123615a6eff2420e27343f22535d6eed860f4b6"
         },
         "32bit": {
             "bin": [
@@ -21,7 +21,7 @@
                 ]
             ],
             "url": "https://github.com/pressly/goose/releases/download/v2.6.0/goose-windows386.exe",
-            "hash": "2ea47564bc04c9d54fa2524af7501bd9916855523232ad340bf3ec76854637e1"
+            "hash": "9e2137bc8012b8d04e67211d462d6e45fa14227b0a903b7067a43dbffdefc133"
         }
     },
     "checkver": "github",
