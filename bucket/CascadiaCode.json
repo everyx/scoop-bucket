@@ -1,19 +1,20 @@
 {
-    "version": "1911.21",
+    "version": "2005.15",
     "license": "OFL-1.1",
     "homepage": "https://github.com/microsoft/cascadia-code",
-    "url": "https://github.com/microsoft/cascadia-code/releases/download/v1911.21/Cascadia.ttf",
+    "url": "https://github.com/microsoft/cascadia-code/releases/download/v2005.15/CascadiaCode_2005.15.zip#/CascadiaCode.zip",
     "hash": "cf5b69933c568eac4231303a952ce57c1581dac10c6e73c70b763cf9ecaabed4",
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {
-        "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/Cascadia.ttf"
+        "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode_$version.zip#/CascadiaCode.zip"
     },
+    "extract_dir": "CascadiaCode/ttf",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
             "$addFont = \"$bucketsdir\\everyx\\libexec\\add-font.ps1\"",
-            "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' -Recurse | ForEach {",
+            "Get-ChildItem -Path $dir -Include 'CascadiaCode.ttf' -Recurse | ForEach {",
             "   Invoke-Expression -Command \"$addFont -path '$_'\"",
             "}"
         ]
@@ -22,7 +23,7 @@
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
             "$removeFont = \"$bucketsdir\\everyx\\libexec\\remove-font.ps1\"",
-            "Get-ChildItem -Path $dir -Include '*.ttf','*.ttc','*.otf' -Recurse | ForEach {",
+            "Get-ChildItem -Path $dir -Include 'CascadiaCode.ttf' -Recurse | ForEach {",
             "   Invoke-Expression -Command \"$removeFont -file '$_'\"",
             "}"
         ]
