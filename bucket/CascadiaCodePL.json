@@ -3,7 +3,7 @@
     "license": "OFL-1.1",
     "homepage": "https://github.com/microsoft/cascadia-code",
     "url": "https://github.com/microsoft/cascadia-code/releases/download/v2005.15/CascadiaCode_2005.15.zip#/CascadiaCode.zip",
-    "hash": "5b612e4e3bec453bab26299eac8330f7cc68b99d685ab86c01cdc54d5d6203e9",
+    "hash": "b3d8495e9cdee90d0dbaf60b7db018413e130265dc27e2be7a8db04cf98fddce",
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {
