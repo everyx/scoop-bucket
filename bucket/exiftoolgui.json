@@ -2,7 +2,7 @@
     "homepage": "https://exiftool.org/gui/",
     "description": "Flexible ExifTool GUI.",
     "version": "5.16",
-    "bin": [
+    "shortcuts": [
         [
             "ExifToolGUI.exe",
             "ExiftoolGUI"
