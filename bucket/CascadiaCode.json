@@ -7,7 +7,7 @@
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {
-        "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode_$version.zip#/CascadiaCode.zip"
+        "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode-$version.zip#/CascadiaCode.zip"
     },
     "extract_dir": "CascadiaCode/ttf",
     "installer": {
