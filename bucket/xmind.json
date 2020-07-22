@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.xmind.cn/",
-    "version": "10.1.3-202005102342",
+    "version": "10.2.0-202007202335",
     "description": "XMind 是一个全功能的思维导图和头脑风暴软件，为激发灵感和创意而生。作为一款有效提升工作和生活效率的生产力工具，受到全球百千万用户的青睐。",
-    "url": "https://www.xmind.cn/xmind/downloads/XMind-2020-for-Windows-32bit-10.1.3-202005102342.exe#/dl.7z",
-    "hash": "acefd9776b47949dc39f7b65bfe614e79d00c96a7dd4ee6bbb57e387611af8f6",
+    "url": "https://www.xmind.cn/xmind/downloads/XMind-2020-for-Windows-32bit-10.2.0-202007202335.exe#/dl.7z",
+    "hash": "c29bd6e013a0c8dc53988f82184141c677024ed6492a8b193d0042f75cad67c2",
     "installer": {
         "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
     },
