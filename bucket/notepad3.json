@@ -3,30 +3,39 @@
     "description": "Notepad like text editor based on the Scintilla source code. Notepad3 based on code from Notepad2 and MiniPath on code from metapath.",
     "version": "5.20.414.1",
     "bin": "Notepad3.exe",
-    "url": [
-        "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.20.414.1/Notepad3_5.20.414.1.zip",
-        "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-install-replace.reg",
-        "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-uninstall.reg"
-    ],
-    "hash": [
-        "a86873d36c491262c1e34055388038ad43bd96fa6092087d947bdb59fd79d15f",
-        "306bf331581183459a4fe241c1b046ee393866155c4a69f0d4a9dcf4903af634",
-        "6a3ba3f05705b0d326892d2553a4658826e7e3cc1d96b5b1c39346c2de962ef6"
-    ],
     "architecture": {
         "64bit": {
+            "url": [
+                "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.20.414.1/Notepad3_5.20.414.1.zip",
+                "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-install-replace.reg",
+                "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-uninstall.reg"
+            ],
+            "hash": [
+                "a86873d36c491262c1e34055388038ad43bd96fa6092087d947bdb59fd79d15f",
+                "306bf331581183459a4fe241c1b046ee393866155c4a69f0d4a9dcf4903af634",
+                "6a3ba3f05705b0d326892d2553a4658826e7e3cc1d96b5b1c39346c2de962ef6"
+            ],
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\Notepad3_*_x64.zip\" \"$dir\""
             }
         },
         "32bit": {
+            "url": [
+                "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.20.414.1/Notepad3_5.20.414.1.zip",
+                "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-install-replace.reg",
+                "https://raw.githubusercontent.com/everyx/scoop-bucket/master/scripts/notepad-uninstall.reg"
+            ],
+            "hash": [
+                "a86873d36c491262c1e34055388038ad43bd96fa6092087d947bdb59fd79d15f",
+                "306bf331581183459a4fe241c1b046ee393866155c4a69f0d4a9dcf4903af634",
+                "6a3ba3f05705b0d326892d2553a4658826e7e3cc1d96b5b1c39346c2de962ef6"
+            ],
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\Notepad3_*_x86.zip\" \"$dir\""
             }
         }
     },
     "post_install": [
-        "Remove-Item \"$dir\\*.zip\"",
         "if(Test-Path(\"$dir\\notepad-install-replace.reg\")) {",
         "  $notepad3path = \"$dir\\Notepad3.exe\".Replace('\\', '\\\\')",
         "  $content = Get-Content \"$dir\\notepad-install-replace.reg\"",
@@ -49,6 +58,13 @@
         "re": "Notepad3 Release ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_$version/Notepad3_$version.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_$version/Notepad3_$version_x64.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_$version/Notepad3_$version_x86.7z"
+            }
+        }
     }
 }
