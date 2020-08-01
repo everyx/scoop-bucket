@@ -14,10 +14,7 @@
                 "5c80e9467799f7eb294b49ef51c57bd79c4ff1840e29aad41060469383667240",
                 "306bf331581183459a4fe241c1b046ee393866155c4a69f0d4a9dcf4903af634",
                 "6a3ba3f05705b0d326892d2553a4658826e7e3cc1d96b5b1c39346c2de962ef6"
-            ],
-            "installer": {
-                "script": "Expand-7zipArchive \"$dir\\Notepad3_*_x64.zip\" \"$dir\""
-            }
+            ]
         },
         "32bit": {
             "url": [
@@ -29,10 +26,7 @@
                 "a360a64ddb79ac3c2aedc8e2a35d5ca34fbffba991ca15ba9341cd29627f541c",
                 "306bf331581183459a4fe241c1b046ee393866155c4a69f0d4a9dcf4903af634",
                 "6a3ba3f05705b0d326892d2553a4658826e7e3cc1d96b5b1c39346c2de962ef6"
-            ],
-            "installer": {
-                "script": "Expand-7zipArchive \"$dir\\Notepad3_*_x86.zip\" \"$dir\""
-            }
+            ]
         }
     },
     "post_install": [
