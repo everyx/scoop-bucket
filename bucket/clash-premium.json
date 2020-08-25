@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/Dreamacro/clash",
-    "description": "A rule-based tunnel in Go",
-    "version": "1.1.0",
+    "homepage": "https://github.com/Dreamacro/clash/wiki/Premium-Core-Features",
+    "description": "close-sourced pre-built Clash binary with TUN support and more (it's free)",
+    "version": "2020.08.16",
     "persist": "config.yaml",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\config.yaml\")) {",
@@ -11,11 +11,11 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/Dreamacro/clash/releases/download/v1.1.0/clash-windows-amd64-v1.1.0.zip",
+                "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2020.08.16.zip",
                 "https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb"
             ],
             "hash": [
-                "462508d9561a602e73e7e26b6836d94cfbfea9219b7c21fb7b329420d3bfb6fd",
+                "ae494d381ed4a5370b51cb3c416966f101d90e7223bf5eab928ec44563e07746",
                 "b0868bd0e4f9885d607befb31167fe5723d7579acb842862fd2fd04ec547b406"
             ],
             "bin": [
@@ -32,11 +32,11 @@
         },
         "32bit": {
             "url": [
-                "https://github.com/Dreamacro/clash/releases/download/v1.1.0/clash-windows-386-v1.1.0.zip",
+                "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2020.08.16.zip",
                 "https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb"
             ],
             "hash": [
-                "fab51a720c8a5ea74ac8149cdce50fdd5c868195f27245dde3cf4aa6343637bb",
+                "e0db25cc3956bda19d3469a3db1e01d3ff67d95775fdcebffc0d0ada968d460a",
                 "b0868bd0e4f9885d607befb31167fe5723d7579acb842862fd2fd04ec547b406"
             ],
             "bin": [
@@ -60,16 +60,16 @@
         "Daemon": "nssm"
     },
     "checkver": {
-        "url": "https://github.com/Dreamacro/clash/releases",
-        "regex": "title=\"v([\\d\\.]+)\""
+        "url": "https://github.com/Dreamacro/clash/releases/tag/premium",
+        "regex": "Premium\\s+([\\d\\.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-amd64-v$version.zip"
+                "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-amd64-$version.zip"
             },
             "32bit": {
-                "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-386-v$version.zip"
+                "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-386-$version.zip"
             }
         }
     }
