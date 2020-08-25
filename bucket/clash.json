@@ -10,8 +10,14 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/v1.1.0/clash-windows-amd64-v1.1.0.zip",
-            "hash": "462508d9561a602e73e7e26b6836d94cfbfea9219b7c21fb7b329420d3bfb6fd",
+            "url": [
+                "https://github.com/Dreamacro/clash/releases/download/v1.1.0/clash-windows-amd64-v1.1.0.zip",
+                "https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb"
+            ],
+            "hash": [
+                "462508d9561a602e73e7e26b6836d94cfbfea9219b7c21fb7b329420d3bfb6fd",
+                "b0868bd0e4f9885d607befb31167fe5723d7579acb842862fd2fd04ec547b406"
+            ],
             "bin": [
                 [
                     "clash-windows-amd64.exe",
@@ -25,8 +31,14 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/v1.1.0/clash-windows-386-v1.1.0.zip",
-            "hash": "fab51a720c8a5ea74ac8149cdce50fdd5c868195f27245dde3cf4aa6343637bb",
+            "url": [
+                "https://github.com/Dreamacro/clash/releases/download/v1.1.0/clash-windows-386-v1.1.0.zip",
+                "https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb"
+            ],
+            "hash": [
+                "fab51a720c8a5ea74ac8149cdce50fdd5c868195f27245dde3cf4aa6343637bb",
+                "b0868bd0e4f9885d607befb31167fe5723d7579acb842862fd2fd04ec547b406"
+            ],
             "bin": [
                 [
                     "clash-windows-386.exe",
