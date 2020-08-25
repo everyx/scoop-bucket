@@ -1,7 +1,7 @@
 {
     "homepage": "https://github.com/Dreamacro/clash",
     "description": "A rule-based tunnel in Go",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "persist": "config.yaml",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\config.yaml\")) {",
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/v1.0.0/clash-windows-amd64-v1.0.0.zip",
-            "hash": "cdfbeebab18bdb8d9c0dd1d0b4d9fbbd904147bda83bd01fc869f9df247791f5",
+            "url": "https://github.com/Dreamacro/clash/releases/download/v1.1.0/clash-windows-amd64-v1.1.0.zip",
+            "hash": "462508d9561a602e73e7e26b6836d94cfbfea9219b7c21fb7b329420d3bfb6fd",
             "bin": [
                 [
                     "clash-windows-amd64.exe",
@@ -25,8 +25,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/v1.0.0/clash-windows-386-v1.0.0.zip",
-            "hash": "60c256b6956a395cad551335f4625715561350d3af82335748641016895dd0c9",
+            "url": "https://github.com/Dreamacro/clash/releases/download/v1.1.0/clash-windows-386-v1.1.0.zip",
+            "hash": "fab51a720c8a5ea74ac8149cdce50fdd5c868195f27245dde3cf4aa6343637bb",
             "bin": [
                 [
                     "clash-windows-386.exe",
