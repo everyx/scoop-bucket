@@ -1,19 +1,10 @@
 {
     "homepage": "https://github.com/haishanh/yacd",
     "description": "Yet Another Clash Dashboard",
-    "version": "70dadbb963479b674afffeed8fdd75fbb87ca68f",
-    "url": "https://github.com/haishanh/yacd/archive/70dadbb963479b674afffeed8fdd75fbb87ca68f.zip",
-    "hash": "1b4078ac01e724305390981586285bed4e46fccba3ee8ea0fd052d02fa511866",
-    "pre_install": [
-        "Move-Item -Path \"$dir\\yacd-$version\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\yacd-$version\""
-    ],
+    "version": "0.2.7",
+    "url": "https://github.com/haishanh/yacd/archive/gh-pages.zip",
+    "extract_dir": "yacd-gh-pages",
+    "hash": "736cdac99eacbaef9d1656b4ad16124d5b275ced17c435ee65b9c6af8b2415c3",
     "notes": "Please set clash `external-ui` to $dir",
-    "checkver": {
-        "url": "https://github.com/haishanh/yacd/commits/gh-pages",
-        "re": "/haishanh/yacd/commit/([a-z0-9]+)"
-    },
-    "autoupdate": {
-        "url": "https://github.com/haishanh/yacd/archive/$version.zip"
-    }
+    "checkver": "github"
 }
