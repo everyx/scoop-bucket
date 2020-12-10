@@ -1,11 +1,16 @@
 {
     "homepage": "https://github.com/Dreamacro/clash/wiki/Premium-Core-Features",
     "description": "close-sourced pre-built Clash binary with TUN support and more (it's free)",
-    "version": "2020.08.16",
-    "persist": ["config.yaml", "Country.mmdb"],
+    "version": "2020.11.20",
+    "persist": [
+        "config.yaml",
+        "Country.mmdb"
+    ],
     "pre_install": [
         "$config = \"$persist_dir\\config.yaml\"",
-        "$value  = \"# Configuration reference:`\n# https://github.com/Dreamacro/clash/wiki/configuration`\n\"",
+        "$value  = \"# Configuration reference:`
+# https://github.com/Dreamacro/clash/wiki/configuration`
+\"",
         "if (!(Test-Path $config)) {",
         "    Add-Content -Path $config -Value $value",
         "}",
@@ -17,8 +22,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2020.08.16.zip",
-            "hash": "ae494d381ed4a5370b51cb3c416966f101d90e7223bf5eab928ec44563e07746",
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2020.11.20.zip",
+            "hash": "4a6fba42f0b6850eb22f817c4d7c4d365e5d7b56c7ec21ca525b45ee11fcc82a",
             "bin": [
                 [
                     "clash-windows-amd64.exe",
@@ -32,8 +37,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2020.08.16.zip",
-            "hash": "e0db25cc3956bda19d3469a3db1e01d3ff67d95775fdcebffc0d0ada968d460a",
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2020.11.20.zip",
+            "hash": "40a077a5a1cd483fe8ab3ac9a61c87c65beae3f94a29962bcc7ec6ad4bdacf9c",
             "bin": [
                 [
                     "clash-windows-386.exe",
