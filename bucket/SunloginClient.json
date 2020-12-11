@@ -24,6 +24,14 @@
             ]
         }
     },
+    "post_install": [
+        "New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Oray\\SunLogin\\SunloginClient' -Name $version_IsRunSeted -Value 1 | Out-Null"
+    ],
+    "uninstaller": {
+        "script": [
+            "Remove-ItemProperty -Path 'HKCU:\\SOFTWARE\\Oray\\SunLogin\\SunloginClient' -Name *_IsRunSeted -Force -ErrorAction SilentlyContinue"
+        ]
+    },
     "checkver": {
         "url": "https://pc.qq.com/detail/0/detail_26760.html",
         "regex": "detail-install-normal.*href=[^\\d]+_([\\d.]+)"

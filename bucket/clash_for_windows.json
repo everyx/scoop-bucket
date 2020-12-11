@@ -1,0 +1,58 @@
+{
+    "homepage": "https://github.com/Fndroid/clash_for_windows_pkg",
+    "description": "A rule-based tunnel in Go",
+    "version": "0.13.6",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.13.6/Clash.for.Windows-0.13.6-win.7z",
+            "hash": "963f5e9ddc7c9ba3ae405376dfa4783d6bb2108c80fd95f78f00ddbaf0a7fe03",
+            "bin": [
+                [
+                    "clash-windows-amd64.exe",
+                    "clashd",
+                    "-d $dir"
+                ],
+                [
+                    "clash-windows-amd64.exe",
+                    "clash"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.13.6/Clash.for.Windows-0.13.6-ia32-win.7z",
+            "hash": "f85db85ee6e1ad755bdb784d565712f78265e6a6b0372cb609998b4d84cd326a",
+            "bin": [
+                [
+                    "clash-windows-386.exe",
+                    "clashd",
+                    "-d $dir"
+                ],
+                [
+                    "clash-windows-386.exe",
+                    "clash"
+                ]
+            ]
+        }
+    },
+    "suggest": {
+        "Dashboard": [
+            "clash-dashboard",
+            "yacd"
+        ],
+        "Daemon": "nssm"
+    },
+    "checkver": {
+        "url": "https://github.com/Dreamacro/clash/releases",
+        "regex": "title=\"v([\\d\\.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-amd64-v$version.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/Dreamacro/clash/releases/download/v$version/clash-windows-386-v$version.zip"
+            }
+        }
+    }
+}
