@@ -9,10 +9,6 @@ function updateReadme {
         [switch] $push
     )
 
-    if (!$push) {
-        return
-    }
-
     # update readme
     $readme_template = '# scoop-bucket
 
@@ -21,6 +17,13 @@ my bucket for [scoop](https://github.com/lukesampson/scoop)
 ``````powershell
 scoop bucket add everyx https://github.com/everyx/scoop-bucket
 ``````
+
+if you get a `Automatic merge failed` error, please reinstall this bucket.
+
+```powershell
+scoop bucket rm everyx
+scoop bucket add everyx https://github.com/everyx/scoop-bucket
+```
 
 ## List of package
 
@@ -55,7 +58,7 @@ $fonts_list
 
         $list_item = "| [$name]($url) | $description | ``$version`` | ``scoop install $name`` |"
 
-        if ($json.installer -and $json.installer.script -and $($json.installer.script | Out-String) -Match 'addFont') {
+        if ($json.installer -and $json.installer.script -and $($json.installer.script | Out-String) -Match 'ttf|otf') {
             $fonts_list += $list_item
         }
         else {
@@ -68,6 +71,9 @@ $fonts_list
 
     $ExecutionContext.InvokeCommand.ExpandString($readme_template) > "$psscriptroot/../README.md"
 
+    if (!$push) {
+        return
+    }
     git add README.md
     git commit -m "update README"
     git push
