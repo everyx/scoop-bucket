@@ -1,0 +1,20 @@
+{
+    "homepage": "https://www.nirsoft.net/utils/multiple_ping_tool.html",
+    "description": "PingInfoView is a small utility that allows you to easily ping multiple host names and IP addresses, and watch the result in one table.",
+    "version": "2.10",
+    "url": "https://www.nirsoft.net/utils/pinginfoview.zip",
+    "hash": "eda580e50af14a89fcf79d2ce3621d6efcf193b0cba144a9825031110165516d",
+    "shortcuts": [
+        [
+            "PingInfoView.exe",
+            "PingInfoView"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.nirsoft.net/utils/multiple_ping_tool.html",
+        "re": "Version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/pinginfoview.zip"
+    }
+}

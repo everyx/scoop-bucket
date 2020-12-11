@@ -1,0 +1,49 @@
+{
+    "homepage": "https://sunlogin.oray.com/",
+    "description": "向日葵远程控制软件",
+    "version": "11.0.0.33826",
+    "architecture": {
+        "64bit": {
+            "url": "https://down.oray.com/sunlogin/windows/SunloginClient_11.0.0.33826_x64.exe",
+            "hash": "fdf5ad6b65a5a8e5b89bf39b7dd04a9a24bf9a55202db9ab5b7b9cdf9e537019",
+            "shortcuts": [
+                [
+                    "SunloginClient_11.0.0.33826_x64.exe",
+                    "向日葵客户端"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://down.oray.com/sunlogin/windows/SunloginClient_11.0.0.33826.exe",
+            "hash": "5a5039735010070d979d1a83babe35b7c433194ccfd5787214f1cb10843313ee",
+            "shortcuts": [
+                [
+                    "SunloginClient_11.0.0.33826.exe",
+                    "向日葵客户端"
+                ]
+            ]
+        }
+    },
+    "post_install": [
+        "New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Oray\\SunLogin\\SunloginClient' -Name $version_IsRunSeted -Value 1 | Out-Null"
+    ],
+    "uninstaller": {
+        "script": [
+            "Remove-ItemProperty -Path 'HKCU:\\SOFTWARE\\Oray\\SunLogin\\SunloginClient' -Name *_IsRunSeted -Force -ErrorAction SilentlyContinue"
+        ]
+    },
+    "checkver": {
+        "url": "https://pc.qq.com/detail/0/detail_26760.html",
+        "regex": "detail-install-normal.*href=[^\\d]+_([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://down.oray.com/sunlogin/windows/SunloginClient_$version_x64.exe"
+            },
+            "32bit": {
+                "url": "https://down.oray.com/sunlogin/windows/SunloginClient_$version.exe"
+            }
+        }
+    }
+}

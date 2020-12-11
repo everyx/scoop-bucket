@@ -1,0 +1,19 @@
+{
+    "homepage": "https://github.com/Dreamacro/clash-dashboard",
+    "description": "web port of clash",
+    "version": "68a8f34104b99b1f93e9ed946d7d744546c5e9e9",
+    "url": "https://github.com/Dreamacro/clash-dashboard/archive/68a8f34104b99b1f93e9ed946d7d744546c5e9e9.zip",
+    "hash": "009be39233a3f773a06377edb6aabdfbcdbd719e5511055f88448afd9b42c93c",
+    "pre_install": [
+        "Move-Item -Path \"$dir\\clash-dashboard-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\clash-dashboard-$version\""
+    ],
+    "notes": "Please set clash `external-ui` to $dir",
+    "checkver": {
+        "url": "https://github.com/Dreamacro/clash-dashboard/commits/gh-pages",
+        "re": "/Dreamacro/clash-dashboard/commit/([a-z0-9]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Dreamacro/clash-dashboard/archive/$version.zip"
+    }
+}

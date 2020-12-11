@@ -1,0 +1,13 @@
+{
+    "homepage": "https://github.com/haishanh/yacd",
+    "description": "Yet Another Clash Dashboard",
+    "version": "0.2.12",
+    "url": "https://github.com/haishanh/yacd/archive/gh-pages.zip",
+    "extract_dir": "yacd-gh-pages",
+    "hash": "5de2bee799cc300e3c7654218c3307394958b648ee00dfcf9b2f84e8813393fb",
+    "notes": "Please set clash `external-ui` to $dir",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/haishanh/yacd/archive/gh-pages.zip"
+    }
+}
