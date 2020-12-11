@@ -2,9 +2,8 @@
     "version": "2.002",
     "license": "OFL-1.1",
     "homepage": "https://github.com/adobe-fonts/source-han-sans",
-    "description": "Adobe Source Han Sans Subset OTF - Simplified Chinese OpenType/CFF fonts",
+    "description": "Source Han Sans Subset OTF - Simplified Chinese OpenType/CFF fonts",
     "url": "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/SourceHanSansCN.zip",
-    "extract_dir": "SourceHanSansCN",
     "hash": "61e2db4a8ea83966d545825d9208279664a4bb14c4514ef2f3b82c95f5c8f2f7",
     "checkver": "github",
     "depends": "sudo",
@@ -15,7 +14,7 @@
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
             "Get-ChildItem $dir -filter '*.otf' -Recurse | ForEach-Object {",
-            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (OpenType)') -Value $_.Name -Force | Out-Null",
             "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
             "}"
         ]
@@ -24,7 +23,7 @@
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop uninstall $app'\"; exit 1 }",
             "Get-ChildItem $dir -filter '*.otf' | ForEach-Object {",
-            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (OpenType)') -Force -ErrorAction SilentlyContinue",
             "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}"
         ]
