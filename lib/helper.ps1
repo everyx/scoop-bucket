@@ -18,12 +18,12 @@ my bucket for [scoop](https://github.com/lukesampson/scoop)
 scoop bucket add everyx https://github.com/everyx/scoop-bucket
 ``````
 
-if you get a `Automatic merge failed` error, please reinstall this bucket.
+if you get a ``Automatic merge failed`` error, please reinstall this bucket.
 
-```powershell
+``````powershell
 scoop bucket rm everyx
 scoop bucket add everyx https://github.com/everyx/scoop-bucket
-```
+``````
 
 ## List of package
 
