@@ -26,7 +26,7 @@
     },
     "checkver": {
         "url": "https://pc.qq.com/detail/0/detail_26760.html",
-        "regex": "版本：([\\d\\.]+)"
+        "regex": "detail-install-normal.*href=[^\\d]+_([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
