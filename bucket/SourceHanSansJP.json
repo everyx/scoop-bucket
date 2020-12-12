@@ -4,7 +4,6 @@
     "homepage": "https://github.com/adobe-fonts/source-han-sans",
     "description": "Adobe Source Han Sans Subset OTF - Japanese OpenType/CFF fonts",
     "url": "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/SourceHanSansJP.zip",
-    "extract_dir": "SourceHanSansJP",
     "hash": "407fef6b08c1b4ccce2f34b6ebf8f6fd8c00d10263afba6ff085f769902d64e9",
     "checkver": "github",
     "depends": "sudo",
