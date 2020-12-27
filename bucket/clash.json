@@ -59,10 +59,7 @@
         ],
         "Daemon": "nssm"
     },
-    "checkver": {
-        "url": "https://github.com/Dreamacro/clash/releases",
-        "regex": "title=\"v([\\d\\.]+)\""
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
