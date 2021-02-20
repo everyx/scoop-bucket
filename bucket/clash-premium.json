@@ -1,7 +1,7 @@
 {
     "homepage": "https://github.com/Dreamacro/clash/wiki/Premium-Core-Features",
     "description": "close-sourced pre-built Clash binary with TUN support and more (it's free)",
-    "version": "2020.12.27",
+    "version": "2021.02.19",
     "persist": [
         "config.yaml",
         "Country.mmdb"
@@ -22,8 +22,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2020.12.27.zip",
-            "hash": "40932ae80dbd652cd544ae58797f8540766fa0418a20e57f48e1c959e343ddfc",
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2021.02.19.zip",
+            "hash": "7715a183f291e3944ad0dcb4ef3a96a266b42ebe5a3ad35180f10713f0f1c81a",
             "bin": [
                 [
                     "clash-windows-amd64.exe",
@@ -37,8 +37,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2020.12.27.zip",
-            "hash": "18321855973adf56fbd877103527bdfecdbde499986d2c58fa97ce7217c4493c",
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2021.02.19.zip",
+            "hash": "5535dd26fcb60f82f81c7580c0c4edcae673025ae85781e501ed643e3db76e39",
             "bin": [
                 [
                     "clash-windows-386.exe",
