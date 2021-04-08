@@ -20,7 +20,7 @@ scoop bucket add everyx https://github.com/everyx/scoop-bucket
 | App | Description | Version | Install Command |
 |-----|-------------|---------|-----------------|
 | [clash-dashboard](https://github.com/Dreamacro/clash-dashboard) | web port of clash | `523123e9ec449aea07c9f2f2d32699e3c753e70c` | `scoop install clash-dashboard` |
-| [clash-for-windows](https://github.com/Fndroid/clash_for_windows_pkg) | A Windows/macOS GUI based on Clash | `0.15.0` | `scoop install clash-for-windows` |
+| [clash-for-windows](https://github.com/Fndroid/clash_for_windows_pkg) | A Windows/macOS GUI based on Clash | `0.15.1` | `scoop install clash-for-windows` |
 | [clash-premium](https://github.com/Dreamacro/clash/wiki/Premium-Core-Features) | close-sourced pre-built Clash binary with TUN support and more (it's free) | `2021.02.19` | `scoop install clash-premium` |
 | [clash](https://github.com/Dreamacro/clash) | A rule-based tunnel in Go | `1.4.2` | `scoop install clash` |
 | [dnschooser](https://gitee.com/gazeboxu/dnschooser-pub) | 一个支持多上游 DNS 本地 DNS 工具 | `0.0.0.9` | `scoop install dnschooser` |
@@ -50,11 +50,11 @@ scoop bucket add everyx https://github.com/everyx/scoop-bucket
 | [CascadiaMonoPL](https://github.com/microsoft/cascadia-code) |  | `2102.25` | `scoop install CascadiaMonoPL` |
 | [MicrosoftYaHeiMono]() |  | `5.0.0` | `scoop install MicrosoftYaHeiMono` |
 | [OperatorMono](https://github.com/coderJianXun/Operator-Mono) | Coding Font Operator Mono | `1370287d8e31ef55cd94c157fa9dbed189f28bae` | `scoop install OperatorMono` |
-| [SourceHanSansCN](https://github.com/adobe-fonts/source-han-sans) | Source Han Sans Subset OTF - Simplified Chinese OpenType/CFF fonts | `2.002` | `scoop install SourceHanSansCN` |
-| [SourceHanSansHK](https://github.com/adobe-fonts/source-han-sans) | Adobe Source Han Sans Subset OTF - Traditional Chinese (Hong Kong) OpenType/CFF fonts | `2.002` | `scoop install SourceHanSansHK` |
-| [SourceHanSansJP](https://github.com/adobe-fonts/source-han-sans) | Adobe Source Han Sans Subset OTF - Japanese OpenType/CFF fonts | `2.002` | `scoop install SourceHanSansJP` |
-| [SourceHanSansKR](https://github.com/adobe-fonts/source-han-sans) | Adobe Source Han Sans Subset OTF - Korean OpenType/CFF fonts | `2.002` | `scoop install SourceHanSansKR` |
-| [SourceHanSansTW](https://github.com/adobe-fonts/source-han-sans) | Adobe Source Han Sans Subset OTF - Traditional Chinese (Taiwan) OpenType/CFF fonts | `2.002` | `scoop install SourceHanSansTW` |
+| [SourceHanSansCN](https://github.com/adobe-fonts/source-han-sans) | Source Han Sans Subset OTF - Simplified Chinese OpenType/CFF fonts | `2.003` | `scoop install SourceHanSansCN` |
+| [SourceHanSansHK](https://github.com/adobe-fonts/source-han-sans) | Adobe Source Han Sans Subset OTF - Traditional Chinese (Hong Kong) OpenType/CFF fonts | `2.003` | `scoop install SourceHanSansHK` |
+| [SourceHanSansJP](https://github.com/adobe-fonts/source-han-sans) | Adobe Source Han Sans Subset OTF - Japanese OpenType/CFF fonts | `2.003` | `scoop install SourceHanSansJP` |
+| [SourceHanSansKR](https://github.com/adobe-fonts/source-han-sans) | Adobe Source Han Sans Subset OTF - Korean OpenType/CFF fonts | `2.003` | `scoop install SourceHanSansKR` |
+| [SourceHanSansTW](https://github.com/adobe-fonts/source-han-sans) | Adobe Source Han Sans Subset OTF - Traditional Chinese (Taiwan) OpenType/CFF fonts | `2.003` | `scoop install SourceHanSansTW` |
 | [SourceHanSerifCN](https://github.com/adobe-fonts/source-han-serif) | Source Han Serif Subset OTF - Simplified Chinese OpenType/CFF fonts | `1.001` | `scoop install SourceHanSerifCN` |
 | [SourceHanSerifJP](https://github.com/adobe-fonts/source-han-serif) | Source Han Serif Subset OTF - Japanese OpenType/CFF fonts | `1.001` | `scoop install SourceHanSerifJP` |
 | [SourceHanSerifKR](https://github.com/adobe-fonts/source-han-serif) | Source Han Serif Subset OTF - Korean OpenType/CFF fonts | `1.001` | `scoop install SourceHanSerifKR` |
