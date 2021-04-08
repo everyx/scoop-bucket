@@ -2,12 +2,12 @@
     "homepage": "https://github.com/haishanh/yacd",
     "description": "Yet Another Clash Dashboard",
     "version": "0.2.15",
-    "url": "https://github.com/haishanh/yacd/archive/gh-pages.zip",
-    "extract_dir": "yacd-gh-pages",
-    "hash": "84495fdcac8af2ab621b8cb024551909cbe25bdef14292fc5da123bbd28b0e18",
+    "url": "https://github.com/haishanh/yacd/releases/download/v0.2.15/yacd.tar.xz#/yacd.tar.xz",
+    "extract_dir": "public",
+    "hash": "51ba5a620589495db99efeadce8844c8db9d734a218d174d53a24b4ec71f1961",
     "notes": "Please set clash `external-ui` to $dir",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/haishanh/yacd/archive/gh-pages.zip"
+        "url": "https://github.com/haishanh/yacd/releases/download/v$version/yacd.tar.xz#/yacd.tar.xz"
     }
 }
