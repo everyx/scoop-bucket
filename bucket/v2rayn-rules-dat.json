@@ -1,7 +1,7 @@
 {
     "homepage": "https://github.com/Loyalsoldier/v2ray-rules-dat",
     "description": "V2Ray 路由规则文件加强版",
-    "version": "202105252213",
+    "version": "202106112209",
     "depends": "v2rayn",
     "checkver": "github",
     "url": [
